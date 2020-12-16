@@ -69,8 +69,7 @@ def compute_metrics(ret_metrics, error_types, metric_names, eps=1e-10, weights=N
 
     if 'accuracy' in metric_names:
         ret_metrics['accuracy'].append(np.mean((error_types['tp_i'] + error_types['tn_i']) / (error_types['tp_i'] + error_types['fp_i'] + error_types['fn_i'] + error_types['tn_i'])))
-    if 'jaccard' in metric_names:
-        ret_metrics['jaccard'].append(error_types['tp_all'] / (error_types['tp_all'] + error_types['fp_all'] + error_types['fn_all'] + eps))
+
     if 'f1' in metric_names:
         pre = error_types['tp_i'] / (error_types['tp_i'] + error_types['fp_i'] + eps)
         rec = error_types['tp_i'] / (error_types['tp_i'] + error_types['fn_i'] + eps)
