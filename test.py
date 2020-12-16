@@ -72,8 +72,8 @@ def main(args):
 
                 update_error_types(error_types, pred_one_hot, target_one_hot)
                     
-    ret_metrics = {'accuracy': [], 'f1': [], 'jaccard': []}
-    compute_metrics(ret_metrics, error_types, ['accuracy', 'f1', 'jaccard'],
+    ret_metrics = {'accuracy': [], 'f1': []}
+    compute_metrics(ret_metrics, error_types, ['accuracy', 'f1'],
                         eps=1e-10,
                         weights=None)
 
