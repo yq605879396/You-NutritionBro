@@ -14,7 +14,7 @@ Food is essential for our lives!
 If you want to know your food better you can just take a photo of  the it and submit to your Your Nutrition Bro.
 It will automatically process your image and prints out ingredients list as well as nutrition set. 
 
-![image-20201215225008725](C:\Users\60587\AppData\Roaming\Typora\typora-user-images\image-20201215225008725.png)![image-20201215225113414](C:\Users\60587\AppData\Roaming\Typora\typora-user-images\image-20201215225113414.png)![image-20201215225136866](C:\Users\60587\AppData\Roaming\Typora\typora-user-images\image-20201215225136866.png)
+![image-20201215225008725](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show1.png)![image-20201215225113414](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show2.png)![image-20201215225136866](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show3.png)
 _credit to "ins:etn.co_mam"_
 
 #### File Structure
@@ -23,7 +23,7 @@ _credit to "ins:etn.co_mam"_
 
 **./data: **  
 Folder "data" has the text information from dataset \href{http://www.ub.edu/cvub/ingredients101/}{ingredient101} and \href{https://www.kaggle.com/kmader/food41}{Recipe5k}.   
-But it doesn't contains image. You can download corresponding images \href{https://www.kaggle.com/kmader/food41}{Food101} and \href{https://www.kaggle.com/kmader/food41}{Recipe5k}.   
+But it doesn't contains image. You can download corresponding images [food101][\href{https://www.kaggle.com/kmader/food41}{Food101}] and [Recipe5k][https://www.kaggle.com/kmader/food41]
 
 **./test_img:**  
 We saved several test image under the folder of test_img, you can also add your own image.     
@@ -51,9 +51,9 @@ vocab_ingrs.pkl: generated vocabulary: needed when training or testing the model
 In root directory, run : python train.py (you can add you config here or just modify suply/args.py)
 
 Or you can download pretrained model here:  
-\href{http://www.ub.edu/cvub/ingredients101/}{Res18 + 6 epoch}  
-\href{http://www.ub.edu/cvub/ingredients101/}{Res18 + 12 epoch}  
-\href{http://www.ub.edu/cvub/ingredients101/}{Res50 + 6 epoch}) 
+[Res18 + 6 epoch][http://www.ub.edu/cvub/ingredients101/]
+[Res18 + 12 epoch][http://www.ub.edu/cvub/ingredients101/]
+[Res50 + 6 epoch][http://www.ub.edu/cvub/ingredients101/]
 
 ###### To Test the model:  
 You can run test.ipynb  
