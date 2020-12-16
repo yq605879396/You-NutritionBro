@@ -62,8 +62,8 @@ python train.py
 ```
 
 Or you can download pretrained model here:  
-[Res18 + 6 epoch](https://drive.google.com/file/d/1ycciUE9VthbnHPgRc9iLLZnPvVg2pvLO/view?usp=sharing)  
-[Res50 + 6 epoch](https://drive.google.com/file/d/1S_r9XkNNpigHHtrBSD8Hy7obSQKsnzuf/view?usp=sharing)  
+[ResNet18 + 6 epoch](https://drive.google.com/file/d/1ycciUE9VthbnHPgRc9iLLZnPvVg2pvLO/view?usp=sharing)  
+[ResNet50 + 6 epoch](https://drive.google.com/file/d/1S_r9XkNNpigHHtrBSD8Hy7obSQKsnzuf/view?usp=sharing)  
 
 ### To Test the model:  
 To obtain accuracy and F1 scores, in root directory run: 
