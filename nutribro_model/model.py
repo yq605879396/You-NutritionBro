@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import random
 import numpy as np
-
+from torchvision.models import resnet18, resnet50
 from nutribro_model.transformer import Transformer
 from nutribro_model.multihead_attention import MultiheadAttention
 from suply.helper import label2onehot
@@ -52,7 +52,7 @@ def get_model(args, ingr_vocab_size):
 
 # define encoder
 class EncoderCNN(nn.Module):
-    def __init__(self, embed_size, dropout=0.5, image_model='resnet101', pretrained=True):
+    def __init__(self, embed_size, dropout=0.5, image_model='resnet50', pretrained=True):
         super(EncoderCNN, self).__init__()
         resnet = globals()[image_model](pretrained=pretrained)
         # Delete the last fc layer
