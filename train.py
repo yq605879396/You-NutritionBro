@@ -215,9 +215,9 @@ def main(args):
                 
 
             if stage == 'val':
-                ret_metrics = {'accuracy': [], 'f1': [], 'jaccard': [], 'dice': []}
+                ret_metrics = {'accuracy': [], 'f1': []}
                 compute_metrics(ret_metrics, error_types,
-                                ['accuracy', 'f1', 'jaccard', 'dice'], eps=1e-10,
+                                ['accuracy', 'f1'], eps=1e-10,
                                 weights=None)
 
         es_value = np.mean(total_loss_dict[args.es_metric])
