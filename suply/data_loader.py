@@ -47,11 +47,8 @@ class Food101Dataset(data.Dataset):
 
         data_entry = self.dataset[self.ids[index]] # index th data
         img_id = data_entry['images'].strip()
-        #print(img_id)
         
-        #img_path = "./data/food-101/food-101/sampled_images/" + img_id + ".jpg" #os.path.join('./images/',img_id,".jpg")
-        #print(img_path)
-        img_path = "./data/Recipes5k/images/"+img_id+ ".jpg" 
+        img_path = "./data/food-101/food-101/sampled_images/" + img_id + ".jpg" 
         labels = self.dataset[self.ids[index]]['ingredients'] # ingredient list
         ilabels_gt = np.ones(self.max_num_labels) * self.ingrs_vocab('<pad>') # <pad><pad>...<pad><pad>
         
