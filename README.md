@@ -60,7 +60,7 @@ Or you can download pretrained model here:
 You can run test.ipynb  
 Or at root directory run: python test  
 
-#### Reference
+### Reference
 Mutilhead Attention used in this project is referred to Inverse Cooking [link](https://github.com/facebookresearch/inversecooking)
 ***
 
