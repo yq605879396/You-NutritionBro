@@ -1,5 +1,5 @@
 # Your NutritionBro
-Course Project for Deep Learning. Input a food image and then print out ingredient list and nutrition list.    
+Project for Deep Learning course . Input a food image and then print out ingredient list and nutrition list.    
 
 Mengxi Wu mw4355@nyu.edu  
 Qi Yin qy652@nyu.edu    
