@@ -14,7 +14,9 @@ Food is essential for our lives!
 If you want to know your food better you can just take a photo of  the it and submit to your Your Nutrition Bro.
 It will automatically process your image and prints out ingredients list as well as nutrition set. 
 
-![image-20201215225008725](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show1.png)![image-20201215225113414](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show2.png)![image-20201215225136866](https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show3.png)
+<img src="https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show2.png" width="300" height="300" /> <img src="https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show1.png" width="300" height="300" />
+<img src="https://github.com/yq605879396/Your-NutritionBro/blob/main/images/show3.png" width="600" height="400" /> 
+
 _credit to "ins:etn.co_mam"_
 
 #### File Structure
@@ -51,9 +53,8 @@ vocab_ingrs.pkl: generated vocabulary: needed when training or testing the model
 In root directory, run : python train.py (you can add you config here or just modify suply/args.py)
 
 Or you can download pretrained model here:  
-[Res18 + 6 epoch](http://www.ub.edu/cvub/ingredients101/)  
-[Res18 + 12 epoch](http://www.ub.edu/cvub/ingredients101/)  
-[Res150 + 6 epoch](http://www.ub.edu/cvub/ingredients101/)  
+[Res18 + 6 epoch](https://drive.google.com/file/d/1ycciUE9VthbnHPgRc9iLLZnPvVg2pvLO/view?usp=sharing)  
+[Res50 + 6 epoch](http://www.ub.edu/cvub/ingredients101/)  
 
 ###### To Test the model:  
 You can run test.ipynb  
