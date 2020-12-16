@@ -176,9 +176,17 @@ def build_vocab_dataset():
 
 
 def main():
-    ingr_path = os.getcwd() + "/data/Recipes5k/annotations/classes_Recipes5k.txt"
-    anno_path = os.getcwd() + "/data/Recipes5k/annotations/"
-    vocab_ingrs, dataset = build_vocab_dataset(ingr_path, anno_path)
+    def main():
+
+    vocab_ingrs, dataset = build_vocab_dataset()
+
+    with open(os.path.join(os.getcwd(), 'vocab_ingrs.pkl'), 'wb') as f:
+        pickle.dump(vocab_ingrs, f)
+
+    for split in dataset.keys():
+        with open(os.path.join(os.getcwd(),'data' + split + '.pkl'), 'wb') as f:
+            pickle.dump(dataset[split], f)
+
 
     with open(os.path.join(os.getcwd(), 'vocab_ingrs.pkl'), 'wb') as f:
         pickle.dump(vocab_ingrs, f)
