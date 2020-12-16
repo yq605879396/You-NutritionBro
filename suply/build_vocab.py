@@ -123,10 +123,9 @@ def remove_plurals(counter_ingrs, ingr_clusters):
     return counter_ingrs, ingr_clusters
 
 # build_vocabl_dataset
-def build_vocab_dataset(ingr_path, anno_path):
+def build_vocab_dataset():
     
-    #f1 = open(os.getcwd() +"/data/Ingredients101/Annotations/classes.txt", "r")
-    f1 = open(ingr_path, "r")
+    f1 = open(os.getcwd() +"/data/Ingredients101/Annotations/classes.txt", "r")
     idx = 0
     class_names = {}
     for class_name in f1:
@@ -135,8 +134,7 @@ def build_vocab_dataset(ingr_path, anno_path):
         idx += 1
     f1.close()
     
-    #f = open(os.getcwd() +"/data/Ingredients101/Annotations/ingredients.txt", "r")
-    f = open(ingr_path, "r")
+    f = open(os.getcwd() +"/data/Ingredients101/Annotations/ingredients.txt", "r")
     class_to_ingrd = {}
     counter_ingrs = Counter()
     idx = 0
@@ -160,23 +158,20 @@ def build_vocab_dataset(ingr_path, anno_path):
     print("Total ingr vocabulary size: {}".format(len(vocab_ingrs)))
     dataset = {'train': [], 'val': [], 'test': []}
     for split in ['train', 'val', 'test']:
-        #f2 = open(os.getcwd() +"/data/Ingredients101/Annotations/"+split+'_images.txt', "r")
-        f2 = open(anno_path+split+'_images.txt', "r")
+        f2 = open(os.getcwd() +"/data/Ingredients101/Annotations/"+split+'_images.txt', "r")
         temp_name = None
         idx = -1
         for line in f2:
             #print(os.getcwd() + "/data/food-101/food-101/sampled_images/" + line + ".jpg")
             line = line.strip()
-            #if os.path.exists( os.getcwd() + "/data/food-101/food-101/sampled_images/" + line +".jpg"):
-            name, number = line.split('/')
-            if name != temp_name:
-                idx += 1
-                temp_name = name
-            newentry = {'id': temp_name,'ingredients': class_to_ingrd[class_names[idx]], 'images': line}
-            dataset[split].append(newentry)
-    
-    # dataset['val'], dataset['test'] = dataset['test'], dataset['val']
-    print(len(dataset['train']), len(dataset['val']), len(dataset['test']))
+            if os.path.exists( os.getcwd() + "/data/food-101/food-101/sampled_images/" + line +".jpg"):
+                name, number = line.split('/')
+                if name != temp_name:
+                    idx += 1
+                    temp_name = name
+                newentry = {'id': temp_name,'ingredients': class_to_ingrd[class_names[idx]], 'images': line}
+                dataset[split].append(newentry)
+    print(len(dataset['train']), len(dataset['test']), len(dataset['val']))
     return vocab_ingrs, dataset
 
 
