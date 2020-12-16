@@ -36,7 +36,7 @@ This folder contains files for model.
 **./suply**  
 This folder contains codes for vocabulary builder, data loader, dataset sampler and some helper functions.  
 
-**root**:  
+**./root**:  
 [train.py](https://github.com/yq605879396/Your-NutritionBro/blob/main/train.py): train the model  
 [test.py](https://github.com/yq605879396/Your-NutritionBro/blob/main/test.py): test the model's accuracy and F1 scores <br>
 [test.ipynb](https://github.com/yq605879396/Your-NutritionBro/blob/main/test.ipynb): test the model, process the image in test_img folder, and print ingredients list and nutrition list.
