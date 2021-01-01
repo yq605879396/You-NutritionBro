@@ -72,6 +72,6 @@ python test.py
 ``` 
 To obtain ingredients list and nutrition list run test.ipynb
 ### Reference
-Mutilhead Attention used in this project is referred to [Inverse Cooking](https://github.com/facebookresearch/inversecooking)
+This project is adapted from [Inverse Cooking](https://github.com/facebookresearch/inversecooking)
 ***
 
