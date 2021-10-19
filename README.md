@@ -1,4 +1,4 @@
-# Your NutritionBro
+# Your NutritionBro (你的营养老铁)
 Project for Deep Learning course . Input a food image and then print out ingredient list and nutrition list.    
 
 Mengxi Wu mw4355@nyu.edu  
